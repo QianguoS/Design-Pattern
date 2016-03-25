@@ -1,7 +1,8 @@
 package com.example.singlepattern;
-
+//懒汉模式，多线程创建该实例的时候造成系统效率低下
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class LazySingleton {
 
@@ -23,6 +24,17 @@ public class LazySingleton {
 		 }
 		 return lazySingleton;
 	 }
-	
+	 public void addServer(String server){
+			serverList.add(server);
+		}
+	public void remove(String server){
+			serverList.remove(server);
+		}
+		
+	public String getRandomServer(){
+			Random random = new Random();
+			int i = random.nextInt(serverList.size());
+			return (String) serverList.get(i);
+		}
 	
 }
