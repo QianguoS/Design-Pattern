@@ -8,7 +8,7 @@ public class LoaderBancer {
 
 	private static LoaderBancer loader;
 	private List serverList;
-	public LoaderBancer() {
+	private LoaderBancer() {
 		
 		serverList = new ArrayList();
 	}

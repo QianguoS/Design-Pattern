@@ -11,7 +11,7 @@ public class EagerSingleton {
 	
 	
 	
-	public EagerSingleton() {
+	private EagerSingleton() {
 		super();
 		// TODO Auto-generated constructor stub
 		serverList = new ArrayList();

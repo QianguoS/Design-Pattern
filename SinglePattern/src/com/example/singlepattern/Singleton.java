@@ -10,7 +10,7 @@ public class Singleton {
 	private List serverList;
 	
 	
-	public Singleton() {
+	private Singleton() {
 		super();
 		// TODO Auto-generated constructor stub
 		serverList = new ArrayList();

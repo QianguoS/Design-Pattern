@@ -8,7 +8,7 @@ public class LazySingleton {
 
 	private volatile static LazySingleton lazySingleton;
 	private List serverList;
-	public LazySingleton() {
+	private LazySingleton() {
 		super();
 		// TODO Auto-generated constructor stub
 		serverList = new ArrayList();
